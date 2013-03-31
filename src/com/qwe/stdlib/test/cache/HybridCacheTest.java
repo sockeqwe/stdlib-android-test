@@ -28,8 +28,7 @@ public class HybridCacheTest extends TestCase {
 			file.delete();
 		}
 
-		cache = new HybridCache<String, Object>(true, 1, true, 10000,
-				cacheDir.getAbsolutePath(), 1);
+		cache = new HybridCache<String, Object>(1, 10000, cacheDir, 1);
 
 	}
 
